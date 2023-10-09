@@ -1,5 +1,7 @@
 module.exports = {
-    content: ["index.html"],
+    content: ['./public/**/*.{html,js}',
+        './index.html',
+    ],
     darkMode: "class",
     theme: {
         container: {
@@ -14,7 +16,7 @@ module.exports = {
                 dark: "#07011A",
                 abumuda: "#CECECE",
                 birutua: "#0E0133",
-                ungumuda: '#838FFF',
+                ungumuda: "#838FFF",
                 white: "#ffffff",
                 purple: "#3f3cbb",
                 midnight: "#121063",
@@ -29,5 +31,5 @@ module.exports = {
             },
         },
     },
-    plugins: [],
+    plugins: ["prettier-plugin-tailwindcss"],
 };
