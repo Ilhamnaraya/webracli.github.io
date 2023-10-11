@@ -1,7 +1,5 @@
 module.exports = {
-    content: ['./public/**/*.{html,js}',
-        './index.html',
-    ],
+    content: ["./public/**/*.{html,js,jsx,ts,tsxjs}", "./index.html"],
     darkMode: "class",
     theme: {
         container: {
@@ -31,5 +29,9 @@ module.exports = {
             },
         },
     },
-    plugins: ["prettier-plugin-tailwindcss"],
+    plugins: [
+        "prettier-plugin-tailwindcss",
+        "flowbite/plugin",
+        require("taos/plugin"),
+    ],
 };
