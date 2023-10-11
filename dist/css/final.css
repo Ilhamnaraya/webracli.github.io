@@ -814,6 +814,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   height: 100vh;
 }
 
+.h-\[423\.52px\] {
+  height: 423.52px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -931,6 +935,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   max-width: 220px;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .shrink {
   flex-shrink: 1;
 }
@@ -974,6 +982,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .flex-nowrap {
   flex-wrap: nowrap;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-start {
@@ -1207,6 +1219,14 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   padding: 26px;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1260,6 +1280,21 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .pb-0 {
