@@ -31,6 +31,8 @@ module.exports = {
     },
     plugins: [
         "prettier-plugin-tailwindcss",
+        "flowbite/plugin",
+        require("taos/plugin"),
         require('tailwindcss-animated')
     ],
 };

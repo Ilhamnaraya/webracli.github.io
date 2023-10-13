@@ -434,10 +434,6 @@ video {
   display: none;
 }
 
-html.js :where([class*="taos:"]:not(.taos-init)) {
-  visibility: hidden;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -778,10 +774,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   height: 194.89px;
 }
 
-.h-\[224\.60px\] {
-  height: 224.60px;
-}
-
 .h-\[280\.89px\] {
   height: 280.89px;
 }
@@ -842,10 +834,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   width: 16rem;
 }
 
-.w-72 {
-  width: 18rem;
-}
-
 .w-80 {
   width: 20rem;
 }
@@ -856,10 +844,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .w-\[260px\] {
   width: 260px;
-}
-
-.w-\[300px\] {
-  width: 300px;
 }
 
 .w-\[86px\] {
@@ -932,6 +916,38 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down {
+  animation: fade-down 1s both;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 1s both;
+}
+
 .list-disc {
   list-style-type: disc;
 }
@@ -990,10 +1006,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-\[20px\] {
-  gap: 20px;
 }
 
 .self-stretch {
@@ -1412,6 +1424,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-duration: 150ms;
 }
 
+.delay-\[300ms\] {
+  transition-delay: 300ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1420,12 +1436,32 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-duration: 250ms;
 }
 
+.duration-\[600ms\] {
+  transition-duration: 600ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.animate-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animate-duration-\[1500ms\] {
+  animation-duration: 1500ms;
+}
+
+.animate-once {
+  animation-iteration-count: 1;
+}
+
+.animate-ease-linear {
+  animation-timing-function: linear;
 }
 
 body {
@@ -1655,10 +1691,6 @@ body {
     height: 377.85px;
   }
 
-  .md\:h-\[423px\] {
-    height: 423px;
-  }
-
   .md\:h-\[427px\] {
     height: 427px;
   }
@@ -1709,10 +1741,6 @@ body {
 
   .md\:w-\[386PX\] {
     width: 386PX;
-  }
-
-  .md\:w-\[565px\] {
-    width: 565px;
   }
 
   .md\:w-\[688px\] {
