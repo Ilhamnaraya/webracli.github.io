@@ -1,5 +1,13 @@
 module.exports = {
-    content: ["./public/**/*.{html,js,jsx,ts,tsxjs}", "./index.html"],
+    safelist: [
+        '!duration-[0ms]',
+        '!delay-[0ms]',
+        'html.js :where([class*="taos:"]:not(.taos-init))'
+      ],
+    content: {relative: true,
+    transform: (content) => content.replace(/taos:/g, ''),
+    files: ["./public/**/*.{html,js,jsx,ts,tsxjs}", "./index.html"],
+  },
     darkMode: "class",
     theme: {
         container: {
@@ -31,6 +39,7 @@ module.exports = {
     },
     plugins: [
         "prettier-plugin-tailwindcss",
-        require('tailwindcss-animated')
+        require('tailwindcss-animated'),
+        require('taos/plugin'),
     ],
 };
