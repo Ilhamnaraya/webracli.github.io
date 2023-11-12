@@ -1781,6 +1781,10 @@ body {
     gap: 0.25rem;
   }
 
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
   .md\:p-6 {
     padding: 1.5rem;
   }
