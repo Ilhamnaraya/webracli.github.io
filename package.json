@@ -17,7 +17,6 @@
   "dependencies": {
     "@material-tailwind/react": "^2.1.2",
     "flowbite-react": "^0.6.4",
-    "tailwindcss-animated": "^1.0.1",
-    "taos": "^1.0.5"
+    "tailwindcss-animated": "^1.0.1"
   }
 }
